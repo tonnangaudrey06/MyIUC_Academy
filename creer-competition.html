@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="fr"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang="fr"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="fr"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title> Créer une compétition
+        |
+        ProTournoi
+    </title>
+    <meta name="description" content="">
+    <meta name="author" content="ProTournoi">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+    <meta property="fb:page_id" content="645959818772006">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="apple-touch-icon" href="./img/icon57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="./img/icon72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="./img/icon76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="./img/icon114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="./img/icon120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="./img/icon144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="./img/icon152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="./img/icon180.png" sizes="180x180">
+    <meta name="theme-color" content="#ea503d">
+    <link rel="stylesheet" href="./css/compiled/all.css" />
+</head>
+
+<body>
+
+    <noscript><iframe src=".//www.googletagmanager.com/ns.html?id=GTM-N7NBDN" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N7NBDN');</script>
+
+    <div id="page-wrapper">
+        <div id="page-container" class="sidebar-partial sidebar-visible-lg sidebar-no-animations header-fixed-top">
+
+            <div id="sidebar">
+
+                <div id="sidebar-scroll">
+
+                    <div class="sidebar-content">
+
+                        <a id="protournoi-logo-link" href="./" target="_blank" class="sidebar-brand">
+                            <span class="sidebar-nav-mini-hide">
+                                <img src="./img/protournoi-logo.png"
+                                    style="height:40px ; display: block; margin-left: auto; margin-right: auto; padding-top: 8px"
+                                    alt="ProTournoi logo">
+                            </span>
+                        </a>
+
+
+                        <div class="col-xs-12" style="margin-top:10px;margin-bottom:10px">
+                            <a class="btn btn-primary" href="./creer-competition"><span
+                                    class="sidebar-nav-mini-hide">Créer une compétition</span></a>
+                        </div>
+                        <ul class="sidebar-nav">
+                            <li class="sidebar-header">
+                                <span class="sidebar-header-title">Mes compétitions</span>
+                            </li>
+                            <li>
+                                <a class="" href="./profil/anderson-tchamba"><span class="sidebar-nav-mini-hide">Toutes
+                                        mes compétitions</span></a>
+                            </li>
+                            <li class="sidebar-header">
+                                <span class="sidebar-header-title">Aide</span>
+                            </li>
+                            <li>
+                                <a class="" href="./aide" target="_blank"><span class="sidebar-nav-mini-hide">Pages
+                                        d&#039;aide</span></a>
+                            </li>
+                            <li>
+                                <a class="" href="./contact" target="_blank"><span
+                                        class="sidebar-nav-mini-hide">Contactez-nous</span></a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="main-container">
+                <header class="navbar navbar-default navbar-fixed-top" style="border-bottom-width: 0px;">
+                    <ul class="nav navbar-nav-custom">
+                        <li>
+                            <a href="javascript:void(0)" onclick="App.sidebar('toggle-sidebar');
+					this.blur();">
+                                <i class="fa fa-bars fa-fw"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="navbar-form-custom" role="search" id="search-form">
+                        <div class="form-group">
+                            <input type="text" id="top-search" name="top-search" class="form-control"
+                                placeholder="Rechercher des compétitions, des lieux, des équipes, des joueurs... Appuyez sur Entrée pour valider."
+                                value="" required>
+                        </div>
+                    </form>
+                    <ul class="nav navbar-nav-custom pull-right">
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="./img/placeholders/avatars/default.png" alt="avatar"> anderson tchamba <i
+                                    class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
+                                <li>
+                                    <a href="./profil/anderson-tchamba">
+                                        <i class="fa fa-user fa-fw pull-right"></i>
+                                        Profil
+                                    </a>
+                                    <a href="javascript:void(0)" id="edit-profile-button"><i
+                                            class="fa fa-cog fa-fw pull-right"></i>
+                                        Éditer mon profil
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="./messagerie/">
+                                        <i class="fa fa-envelope-o fa-fw pull-right"></i>
+                                        Messagerie
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="./logout"><i class="fa fa-sign-out fa-fw pull-right"></i>
+                                        Déconnexion
+                                    </a>
+                                </li>
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                </header>
+                <div id="page-content">
+                    <div class="content-header">
+                        <div class="header-section">
+                            <h1>
+                                <i class="fa fa-magic"></i>Créer une compétition<br><small>En seulement 3 étapes
+                                    !</small>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <form class="form-horizontal form-bordered ui-formwizard"
+                            name="protournoi_competitionbundle_competition" method="get">
+                            <div class="step ui-formwizard-content">
+                                <div class="wizard-steps">
+                                    <div class="row">
+                                        <div class="col-xs-3 active">
+                                            <span>1. Général</span>
+                                        </div>
+                                        <div class="col-xs-3 ">
+                                            <span>2. Sport</span>
+                                        </div>
+                                        <div class="col-xs-3 ">
+                                            <span>3. Catégories</span>
+                                        </div>
+                                        <div class="col-xs-3 ">
+                                            <span>4. Dons</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <fieldset>
+                                    <legend>
+                                        <div class="row">
+                                            <div class="col-md-6 col-md-offset-1">
+                                                <i class="fa fa-newspaper-o"></i> Informations générales
+                                            </div>
+                                        </div>
+                                    </legend>
+                                    <div class="form-group "><label class="col-md-4 control-label required"
+                                            for="protournoi_competitionbundle_competition_name">Nom de ma compétition
+                                            *</label>
+                                        <div class="col-md-5"><input type="text"
+                                                id="protournoi_competitionbundle_competition_name"
+                                                name="protournoi_competitionbundle_competition[name]"
+                                                required="required" maxlength="255" class="form-control" /></div>
+                                    </div>
+                                    <div class="form-group "><label class="col-md-4 control-label"
+                                            for="protournoi_competitionbundle_competition_sport">Sport *</label>
+                                        <div class="col-md-5"><select
+                                                id="protournoi_competitionbundle_competition_sport"
+                                                name="protournoi_competitionbundle_competition[sport]"
+                                                class="select-select2" style="width:100%" class="form-control">
+                                                <option value="">Sélectionnez un sport</option>
+                                                <option value="11">Badminton</option>
+                                                <option value="21">Basket-ball</option>
+                                                <option value="1">Football</option>
+                                                <option value="61">Handball</option>
+                                                <option value="71">Judo</option>
+                                                <option value="41">Pétanque</option>
+                                                <option value="81">Rugby</option>
+                                                <option value="101">Squash</option>
+                                                <option value="121">Taekwondo</option>
+                                                <option value="111">Tennis de table</option>
+                                                <option value="31">Tennis</option>
+                                                <option value="51">Jeux-vidéo</option>
+                                                <option value="91">Volley-ball</option>
+                                            </select></div>
+                                    </div>
+                                    <div class="form-group "><label class="col-md-4 control-label"
+                                            for="protournoi_competitionbundle_competition_location">Lieu de ma
+                                            compétition</label>
+                                        <div class="col-md-5"><input type="text"
+                                                id="protournoi_competitionbundle_competition_location"
+                                                name="protournoi_competitionbundle_competition[location]"
+                                                maxlength="255" class="form-control" /></div>
+                                    </div>
+                                    <div class="form-group "><label class="col-md-4 control-label"
+                                            for="protournoi_competitionbundle_competition_description">Détails à propos
+                                            de ma compétition</label>
+                                        <div class="col-md-5"><textarea
+                                                id="protournoi_competitionbundle_competition_description"
+                                                name="protournoi_competitionbundle_competition[description]"
+                                                class="ckeditor" style="width:100%" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group "><label class="col-md-4 control-label"
+                                            for="protournoi_competitionbundle_competition_rules">Règles spécifiques à ma
+                                            compétition</label>
+                                        <div class="col-md-5"><textarea
+                                                id="protournoi_competitionbundle_competition_rules"
+                                                name="protournoi_competitionbundle_competition[rules]" class="ckeditor"
+                                                style="width:100%" class="form-control"></textarea></div>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>
+                                        <div class="row">
+                                            <div class="col-md-6 col-md-offset-1">
+                                                <i class="fa fa-calendar"></i> Dates de ma compétition
+                                            </div>
+                                        </div>
+                                    </legend>
+                                    <div class="form-group ">
+                                        <label class="col-md-4 control-label" for="example-daterange1">Dates de début et
+                                            de fin *</label>
+                                        <div class="col-md-5">
+                                            <div class="input-group input-daterange" data-date-format="dd/mm/yyyy">
+                                                <input type="text"
+                                                    id="protournoi_competitionbundle_competition_beginDate"
+                                                    name="protournoi_competitionbundle_competition[beginDate]"
+                                                    required="required" placeholder="Début" readonly="readonly"
+                                                    class="form-control readonly-date" class="form-control" />
+                                                <span class="input-group-addon"><i class="fa fa-angle-right"></i></span>
+                                                <input type="text" id="protournoi_competitionbundle_competition_endDate"
+                                                    name="protournoi_competitionbundle_competition[endDate]"
+                                                    required="required" placeholder="Fin" readonly="readonly"
+                                                    class="form-control readonly-date" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="col-md-4 control-label" for="hasRegistrationDeadline">Date limite
+                                            d&#039;inscription</label>
+                                        <div class="col-md-5">
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <input type="checkbox" id="hasRegistrationDeadline">
+                                                </div>
+                                                <div id="registrationDeadlineField" class="col-sm-10"
+                                                    style="visibility:hidden">
+                                                    <input type="text"
+                                                        id="protournoi_competitionbundle_competition_registrationDeadline"
+                                                        name="protournoi_competitionbundle_competition[registrationDeadline]"
+                                                        class="input-datepicker form-control readonly-date"
+                                                        data-date-format="dd/mm/yyyy"
+                                                        placeholder="Entrez la date limite d&#039;inscription"
+                                                        readonly="readonly" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>
+                                        <div class="row">
+                                            <div class="col-md-6 col-md-offset-1">
+                                                <i class="fa fa-ticket"></i> Inscriptions et paiement
+                                            </div>
+                                        </div>
+                                    </legend>
+                                    <div class="form-group ">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-8"><input type="checkbox"
+                                                id="protournoi_competitionbundle_competition_playersCanRegister"
+                                                name="protournoi_competitionbundle_competition[playersCanRegister]"
+                                                class="form-control" value="1" checked="checked" />&nbsp; <label
+                                                for="protournoi_competitionbundle_competition_playersCanRegister">Les
+                                                participants peuvent s&#039;inscrire eux-mêmes sur ProTournoi</label>
+                                        </div>
+                                    </div>
+                                    <div id="registrationOptions" class="">
+                                        <div class="form-group ">
+                                            <div class="col-md-4"></div>
+                                            <div class="col-md-8"><input type="checkbox"
+                                                    id="protournoi_competitionbundle_competition_registrationValidation"
+                                                    name="protournoi_competitionbundle_competition[registrationValidation]"
+                                                    class="form-control" value="1" />&nbsp; <label
+                                                    for="protournoi_competitionbundle_competition_registrationValidation">Je
+                                                    veux valider manuellement les inscriptions des participants</label>
+                                            </div>
+                                        </div>
+                                        <div id="onlinePayment" class="">
+                                            <div class="form-group ">
+                                                <div class="col-md-4"></div>
+                                                <div class="col-md-8"><input type="checkbox"
+                                                        id="protournoi_competitionbundle_competition_isPaying"
+                                                        name="protournoi_competitionbundle_competition[isPaying]"
+                                                        class="form-control" value="1" />&nbsp; <label
+                                                        for="protournoi_competitionbundle_competition_isPaying">L&#039;inscription
+                                                        à ma compétition est payante</label></div>
+                                            </div>
+                                            <div id="paymentOptions" class="hidden">
+                                                <div class="form-group text-center">
+                                                    <h4>Pour des raisons juridiques, la <a
+                                                            href='/app/creer-club'>création d'une structure</a> est
+                                                        obligatoire pour créer une compétition payante.</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>
+                                        <div class="row">
+                                            <div class="col-md-6 col-md-offset-1">
+                                                <i class="fa fa-sliders"></i> Options de ma compétition
+                                            </div>
+                                        </div>
+                                    </legend>
+                                    <div class="form-group ">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-8"><input type="checkbox"
+                                                id="protournoi_competitionbundle_competition_hasPlanning"
+                                                name="protournoi_competitionbundle_competition[hasPlanning]"
+                                                class="form-control" value="1" />&nbsp; <label
+                                                for="protournoi_competitionbundle_competition_hasPlanning">Je veux
+                                                activer la création automatique du planning en fonction des terrains et
+                                                des horaires</label></div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-8"><input type="checkbox"
+                                                id="protournoi_competitionbundle_competition_isVisible"
+                                                name="protournoi_competitionbundle_competition[isVisible]"
+                                                class="form-control" value="1" checked="checked" />&nbsp; <label
+                                                for="protournoi_competitionbundle_competition_isVisible">Ma compétition
+                                                est visible dans les recherches de ProTournoi</label></div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-8"><input type="checkbox"
+                                                id="protournoi_competitionbundle_competition_playersCanInputScores"
+                                                name="protournoi_competitionbundle_competition[playersCanInputScores]"
+                                                class="form-control" value="1" checked="checked" />&nbsp; <label
+                                                for="protournoi_competitionbundle_competition_playersCanInputScores">Les
+                                                participants peuvent entrer eux-mêmes leurs résultats sur
+                                                ProTournoi</label></div>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>
+                                        <div class="row">
+                                            <div class="col-md-6 col-md-offset-1">
+                                                <i class="fa fa-trophy"></i> Organisation de ma compétition
+                                            </div>
+                                        </div>
+                                    </legend>
+                                    <div class="form-group "><label class="col-md-4 control-label required"
+                                            for="protournoi_competitionbundle_competition_nbPlayersPerCategory">Nombre
+                                            maximal de participants dans chaque catégorie *</label>
+                                        <div class="col-md-5"><input type="number"
+                                                id="protournoi_competitionbundle_competition_nbPlayersPerCategory"
+                                                name="protournoi_competitionbundle_competition[nbPlayersPerCategory]"
+                                                required="required" pattern=".{1,}" class="form-control" /><span
+                                                class="help-block">Vous pourrez ajuster ce paramètre pour chaque
+                                                catégorie à l&#039;étape 3</span></div>
+                                    </div>
+                                    <div class="form-group "><label class="col-md-4 control-label"
+                                            for="protournoi_competitionbundle_competition_firstStepFormat">Format de la
+                                            première phase de compétition *</label>
+                                        <div class="col-md-5">
+                                            <div class="input-group input-group-without-padding"><select
+                                                    id="protournoi_competitionbundle_competition_firstStepFormat"
+                                                    name="protournoi_competitionbundle_competition[firstStepFormat]"
+                                                    class="select-select2" style="width:100%" class="form-control">
+                                                    <option value="">Sélectionnez un format de compétition</option>
+                                                    <option value="31">Championnat</option>
+                                                    <option value="41">Championnat avec matchs aller et retour</option>
+                                                    <option value="1">Poules</option>
+                                                    <option value="11">Poules avec matchs aller et retour</option>
+                                                    <option value="21">Tableau à élimination directe</option>
+                                                    <option value="51">Tableau multi-chances</option>
+                                                </select><span class="input-group-btn"><button type="button"
+                                                        class="btn btn-info" data-toggle="modal"
+                                                        data-target="#modal-formats">Aide</button></span></div><span
+                                                class="help-block">Vous pourrez ajuster ce paramètre pour chaque
+                                                catégorie à l&#039;étape 3</span>
+                                        </div>
+                                    </div>
+                                    <div id="modal-formats" class="modal fade" tabindex="-1" role="dialog"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-hidden="true">&times;</button>
+                                                    <h3 class="modal-title">Aide sur les formats de compétition</h3>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <dl class="text-justify margin-dd">
+                                                        <dt>Championnat</dt>
+                                                        <dd>Dans ce format, chaque participant rencontre chaque autre
+                                                            participant une seule fois.</dd>
+                                                        <dt>Championnat avec matchs aller et retour</dt>
+                                                        <dd>Dans ce format, chaque participant rencontre chaque autre
+                                                            participant deux fois.</dd>
+                                                        <dt>Poules</dt>
+                                                        <dd>Dans ce format, chaque participant est assigné à un groupe
+                                                            et rencontre chaque autre participant de ce groupe une seule
+                                                            fois.</dd>
+                                                        <dt>Poules avec matchs aller et retour</dt>
+                                                        <dd>Dans ce format, chaque participant est assigné à un groupe
+                                                            et rencontre chaque autre participant de ce groupe deux
+                                                            fois.</dd>
+                                                        <dt>Tableau à élimination directe</dt>
+                                                        <dd>Dans ce format, les participants s&#039;affrontent deux par
+                                                            deux. Le perdant est éliminé et le gagnant qualifié pour le
+                                                            tour suivant.</dd>
+                                                        <dt>Tableau multi-chances</dt>
+                                                        <dd>Dans ce format, les participants s&#039;affrontent deux par
+                                                            deux. À chaque tour, les perdants sont basculés dans un
+                                                            tableau des perdants et les gagnants qualifiés pour le tour
+                                                            suivant. Le processus se répète pour chaque tableau des
+                                                            perdants, proposant ainsi à chaque participant un nombre
+                                                            similaire de matchs. À la fin, un classement est établi.
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-sm btn-default"
+                                                        data-dismiss="modal">Fermer</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <input type="hidden"
+                                id="protournoi_competitionbundle_competition_flow_createCompetition_step"
+                                name="flow_createCompetition_step" class="form-control" value="1" /><input type="hidden"
+                                id="protournoi_competitionbundle_competition__token"
+                                name="protournoi_competitionbundle_competition[_token]" class="form-control"
+                                value="xEYf2y6-mcaeqn0-GUjNLbz1LcT0GDp9pR91WAtmLI8" />
+                            <div class="form-group form-actions">
+                                <div class="text-center">
+                                    <div class="craue_formflow_buttons craue_formflow_button_count_2">
+                                        <button type="submit" class="btn btn-lg btn-primary">Étape suivante&nbsp;<i
+                                                class="fa fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <footer class="clearfix">
+                    <div class="pull-right">
+                    </div>
+                    <div class="pull-left">
+                        2023 &copy; <a href="https://www.protournoi.fr" style="color: #ea503d;"
+                            target="_blank">ProTournoi</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div id="edit-profile-container"></div>
+    <a href="#" id="to-top"><i class="fa fa-angle-double-up"></i></a>
+    <script src="./js/compiled/all.js"></script>
+    <script>
+        $('#edit-profile-button').click(function () {
+            var editProfilePath = '/profile/edit';
+            $.get(editProfilePath, function (data) {
+                $("#edit-profile-container").html(data);
+                $('#modal-user-settings').modal('show');
+                $('[data-toggle="tabs"] a, .enable-tabs a').click(function (e) { e.preventDefault(); $(this).tab('show'); });
+            });
+        });
+    </script>
+    <script>
+        function submitEditProfile(e, dom) {
+            var postData = new FormData(dom[0]);
+            var formURL = dom.attr("action");
+            $.ajax(
+                {
+                    url: formURL,
+                    type: "POST",
+                    data: postData,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success: function (data, textStatus, jqXHR) {
+                        $('#modal-user-settings').modal('hide');
+                        $('body').removeClass('modal-open');
+                        $('.modal-backdrop').remove();
+
+                        if (data.url) {
+                            window.location.assign(data.url);
+                        }
+                        else {
+                            $('#modal-user-settings').replaceWith(data);
+                            $('[data-toggle="tabs"] a, .enable-tabs a').click(function (e) { e.preventDefault(); $(this).tab('show'); });
+                            $('.nav-tabs a[href=#' + dom.attr('form_name') + ']').tab('show');
+                            $('#modal-user-settings').modal('show');
+                        }
+                    },
+                });
+            e.preventDefault(); //STOP default action
+            return false;
+        }
+        $("body").on("submit", ".edit_profile_form", function (e) { submitEditProfile(e, $(this)); });
+    </script>
+    <script>
+        $("#search-form").submit(function (event) {
+            event.preventDefault();
+            request = $("#top-search").val();
+            baseURL = "./recherche/TOREPLACE";
+            window.location.href = baseURL.replace("TOREPLACE", request);
+        });
+    </script>
+    <script src="./js/helpers/ckeditor/ckeditor.js"></script>
+    <script>
+        $('#hasRegistrationDeadline').on('ifChecked', function (event) {
+            $('#registrationDeadlineField').css('visibility', 'visible');
+        });
+        $('#hasRegistrationDeadline').on('ifUnchecked', function (event) {
+            $('#registrationDeadlineField').css('visibility', 'hidden');
+            $('#protournoi_competitionbundle_competition_registrationDeadline').val("");
+
+        });
+    </script>
+    <script>
+        $('#protournoi_competitionbundle_competition_playersCanRegister').on('ifChecked', function (event) {
+            $('#registrationOptions').removeClass('hidden');
+        });
+        $('#protournoi_competitionbundle_competition_playersCanRegister').on('ifUnchecked', function (event) {
+            $('#registrationOptions').addClass('hidden');
+            $('#protournoi_competitionbundle_competition_isPaying').iCheck('uncheck');
+        });
+    </script>
+    <script>
+        $('#protournoi_competitionbundle_competition_registrationValidation').on('ifChecked', function (event) {
+            $('#onlinePayment').addClass('hidden');
+            $('#protournoi_competitionbundle_competition_isPaying').iCheck('uncheck');
+        });
+        $('#protournoi_competitionbundle_competition_registrationValidation').on('ifUnchecked', function (event) {
+            $('#onlinePayment').removeClass('hidden');
+        });
+    </script>
+    <script>
+        $('#protournoi_competitionbundle_competition_isPaying').on('ifChecked', function (event) {
+            $('#paymentOptions').removeClass('hidden');
+        });
+        $('#protournoi_competitionbundle_competition_isPaying').on('ifUnchecked', function (event) {
+            $('#paymentOptions').addClass('hidden');
+        });
+    </script>
+    <script>
+        $('#protournoi_competitionbundle_competition_registrationPaymentParameters_cancellationAllowed').on('ifChecked', function (event) {
+            $('#cancellationNbDays').removeClass('hidden');
+        });
+        $('#protournoi_competitionbundle_competition_registrationPaymentParameters_cancellationAllowed').on('ifUnchecked', function (event) {
+            $('#cancellationNbDays').addClass('hidden');
+        });
+    </script>
+    <script>
+        $("input[value='manual']").on('ifChecked', function (event) {
+            $('#customPaymentInstructions').removeClass('hidden');
+        });
+        $("input[value='manual']").on('ifUnchecked', function (event) {
+            $('#customPaymentInstructions').addClass('hidden');
+        });
+    </script>
+</body>
+
+</html>
