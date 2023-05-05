@@ -107,77 +107,10 @@
                 <legend>
                     <div class="row">
                         <div class="col-md-6 col-md-offset-1">
-                            <i class="fa fa-ticket"></i> Inscriptions et paiement
-                        </div>
-                    </div>
-                </legend>
-                <div class="form-group ">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-8"><input type="checkbox" id="protournoi_competitionbundle_competition_playersCanRegister" name="protournoi_competitionbundle_competition[playersCanRegister]" class="form-control" value="1" checked="checked" />&nbsp; <label for="protournoi_competitionbundle_competition_playersCanRegister">Les
-                            participants peuvent s&#039;inscrire eux-mêmes sur ProTournoi</label>
-                    </div>
-                </div>
-                <div id="registrationOptions" class="">
-                    <div class="form-group ">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-8"><input type="checkbox" id="protournoi_competitionbundle_competition_registrationValidation" name="protournoi_competitionbundle_competition[registrationValidation]" class="form-control" value="1" />&nbsp; <label for="protournoi_competitionbundle_competition_registrationValidation">Je
-                                veux valider manuellement les inscriptions des participants</label>
-                        </div>
-                    </div>
-                    <div id="onlinePayment" class="">
-                        <div class="form-group ">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-8"><input type="checkbox" id="protournoi_competitionbundle_competition_isPaying" name="protournoi_competitionbundle_competition[isPaying]" class="form-control" value="1" />&nbsp; <label for="protournoi_competitionbundle_competition_isPaying">L&#039;inscription
-                                    à ma compétition est payante</label></div>
-                        </div>
-                        <div id="paymentOptions" class="hidden">
-                            <div class="form-group text-center">
-                                <h4>Pour des raisons juridiques, la <a href='/app/creer-club'>création d'une structure</a> est
-                                    obligatoire pour créer une compétition payante.</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-1">
-                            <i class="fa fa-sliders"></i> Options de ma compétition
-                        </div>
-                    </div>
-                </legend>
-                <div class="form-group ">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-8"><input type="checkbox" id="protournoi_competitionbundle_competition_hasPlanning" name="protournoi_competitionbundle_competition[hasPlanning]" class="form-control" value="1" />&nbsp; <label for="protournoi_competitionbundle_competition_hasPlanning">Je veux
-                            activer la création automatique du planning en fonction des terrains et
-                            des horaires</label></div>
-                </div>
-                <div class="form-group ">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-8"><input type="checkbox" id="protournoi_competitionbundle_competition_isVisible" name="protournoi_competitionbundle_competition[isVisible]" class="form-control" value="1" checked="checked" />&nbsp; <label for="protournoi_competitionbundle_competition_isVisible">Ma compétition
-                            est visible dans les recherches de ProTournoi</label></div>
-                </div>
-                <div class="form-group ">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-8"><input type="checkbox" id="protournoi_competitionbundle_competition_playersCanInputScores" name="protournoi_competitionbundle_competition[playersCanInputScores]" class="form-control" value="1" checked="checked" />&nbsp; <label for="protournoi_competitionbundle_competition_playersCanInputScores">Les
-                            participants peuvent entrer eux-mêmes leurs résultats sur
-                            ProTournoi</label></div>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-1">
                             <i class="fa fa-trophy"></i> Organisation de ma compétition
                         </div>
                     </div>
                 </legend>
-                <div class="form-group "><label class="col-md-4 control-label required" for="protournoi_competitionbundle_competition_nbPlayersPerCategory">Nombre
-                        maximal de participants dans chaque catégorie *</label>
-                    <div class="col-md-5"><input type="number" id="protournoi_competitionbundle_competition_nbPlayersPerCategory" name="protournoi_competitionbundle_competition[nbPlayersPerCategory]" required="required" pattern=".{1,}" class="form-control" /><span class="help-block">Vous pourrez ajuster ce paramètre pour chaque
-                            catégorie à l&#039;étape 3</span></div>
-                </div>
                 <div class="form-group "><label class="col-md-4 control-label" for="protournoi_competitionbundle_competition_firstStepFormat">Format de la
                         première phase de compétition *</label>
                     <div class="col-md-5">
