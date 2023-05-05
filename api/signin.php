@@ -17,9 +17,10 @@ if (sizeof($rec) > 0) {
     $_SESSION["userId"] = $rec[0]->id_utilisateur;
     $_SESSION["userName"] = $rec[0]->nom . ' ' . $rec[0]->prenom;
     $_SESSION["type"] = "User";
-    header("Location: ../app/competition/tournoi-d-exemple-de-protournoi.html");
+    //header("Location: ../app/competition/tournoi-d-exemple-de-protournoi.html");
+    header("Location: ../profil.php");
     exit();
-} else {
+} else { 
     echo ("Les donnees entrees sont incorrectes");
 }
 ?>
