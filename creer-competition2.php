@@ -6,7 +6,7 @@
     </div>
 </div>
 <div class="block">
-    <form class="form-horizontal form-bordered ui-formwizard" name="protournoi_competitionbundle_competition" method="POST">
+    <form class="form-horizontal form-bordered ui-formwizard" name="protournoi_competitionbundle_competition" method="POST" action="./api/point_competition.php">
         <div class="step ui-formwizard-content">
             <div class="wizard-steps">
                 <div class="row">
@@ -34,21 +34,24 @@
                 </legend>
                 <div id="protournoi_competitionbundle_competition_sportParametersValues">
                     <div class="form-group "><label class="col-md-4 control-label required" for="protournoi_competitionbundle_competition_sportParametersValues_nbPointsVictory">Nombre de points par victoire *</label>
-                        <div class="col-md-5"><input type="number" id="protournoi_competitionbundle_competition_sportParametersValues_nbPointsVictory" name="protournoi_competitionbundle_competition[sportParametersValues][nbPointsVictory]" required="required" class="form-control" value="3" /></div>
+                        <div class="col-md-5"><input type="number" id="protournoi_competitionbundle_competition_sportParametersValues_nbPointsVictory" name="victory" required="required" class="form-control" value="3" /></div>
                     </div>
                     <div class="form-group "><label class="col-md-4 control-label required" for="protournoi_competitionbundle_competition_sportParametersValues_nbPointsDraw">Nombre de points par match nul *</label>
-                        <div class="col-md-5"><input type="number" id="protournoi_competitionbundle_competition_sportParametersValues_nbPointsDraw" name="protournoi_competitionbundle_competition[sportParametersValues][nbPointsDraw]" required="required" class="form-control" value="1" /></div>
+                        <div class="col-md-5"><input type="number" id="protournoi_competitionbundle_competition_sportParametersValues_nbPointsDraw" name="draw" required="required" class="form-control" value="1" /></div>
                     </div>
                     <div class="form-group "><label class="col-md-4 control-label required" for="protournoi_competitionbundle_competition_sportParametersValues_nbPointsDefeat">Nombre de points par défaite *</label>
-                        <div class="col-md-5"><input type="number" id="protournoi_competitionbundle_competition_sportParametersValues_nbPointsDefeat" name="protournoi_competitionbundle_competition[sportParametersValues][nbPointsDefeat]" required="required" class="form-control" value="0" /></div>
+                        <div class="col-md-5"><input type="number" id="protournoi_competitionbundle_competition_sportParametersValues_nbPointsDefeat" name="defeat" required="required" class="form-control" value="0" /></div>
                     </div>
                     <div class="form-group "><label class="col-md-4 control-label required" for="protournoi_competitionbundle_competition_sportParametersValues_nbPointsWithdrawal">Nombre de points par défaite par forfait *</label>
-                        <div class="col-md-5"><input type="number" id="protournoi_competitionbundle_competition_sportParametersValues_nbPointsWithdrawal" name="protournoi_competitionbundle_competition[sportParametersValues][nbPointsWithdrawal]" required="required" class="form-control" value="0" /></div>
+                        <div class="col-md-5"><input type="number" id="protournoi_competitionbundle_competition_sportParametersValues_nbPointsWithdrawal" name="withdrawal" required="required" class="form-control" value="0" /></div>
                     </div>
                 </div>
             </fieldset>
         </div>
-        <input type="hidden" id="protournoi_competitionbundle_competition_flow_createCompetition_step" name="flow_createCompetition_step" class="form-control" value="2" /><input type="hidden" id="protournoi_competitionbundle_competition__token" name="protournoi_competitionbundle_competition[_token]" class="form-control" value="xEYf2y6-mcaeqn0-GUjNLbz1LcT0GDp9pR91WAtmLI8" />
+        <?php
+        echo ('<input type="hidden" id="protournoi_competitionbundle_competition_flow_createCompetition_step" name="id" class="form-control" value="'.$_GET["c"].'" />')
+        ?>
+        <input type="hidden" id="protournoi_competitionbundle_competition__token" name="_token" class="form-control" value="xEYf2y6-mcaeqn0-GUjNLbz1LcT0GDp9pR91WAtmLI8" />
         <div class="form-group form-actions">
             <div class="text-center">
                 <div class="craue_formflow_buttons craue_formflow_button_count_3">

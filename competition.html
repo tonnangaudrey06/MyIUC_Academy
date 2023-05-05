@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="utf-8">
+    <title>MyIUC-Academy</title>
+    <meta name="description" content="">
+    <meta name="author" content="ProTournoi">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+    <meta property="fb:page_id" content="645959818772006">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/icon57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="img/icon72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="img/icon76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="img/icon114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="img/icon120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="img/icon144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="img/icon152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="img/icon180.png" sizes="180x180">
+    <meta name="theme-color" content="#ea503d">
+    <link rel="stylesheet" href="css/compiled/all.css" />
+</head>
+
+<body>
+
+
+    <img src="img/placeholders/backgrounds/login_full_bg.jpg" alt="Login Full Background"
+        class="full-bg animation-pulseSlow">
+
+    <div id="login-container" class="animation-fadeIn">
+
+        <div class="login-title text-center">
+            <h1>
+                <a href="index.html" title="ProTournoi">
+                    <h4>MyIUC-Academy</h4>
+                </a>
+                <br>
+                <small>
+                    creer une equipe
+                </small>
+            </h1>
+        </div>
+
+
+        <div class="block push-bit">
+
+            <form action="api/signin.php" method="post" id="form-login"
+                class="form-horizontal form-bordered form-control-borderless">
+                <input type="hidden" name="_csrf_token" value="vD48FSMB3a4IPYpzIfzL6Knjtgk03-sudvx2BG_diZ8" />
+                <div class="col-xs-12">
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <div class="input-group">
+                            <input type="text" id="" name="nom_adverssaire" class="form-control input-lg"
+                                placeholder="nom equipe">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <div class="input-group">
+                            <label for="inputReference5" class="form-label">competition</label>
+                            <select name="familly" id="familly" class="form-select">
+                                <option value="-1">selectionnez une competition</option>
+                                
+                                </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                <div class="form-group form-actions">
+                    <div class="col-xs-12 text-right">
+                        <button type="submit" class="btn btn-block btn-primary">Enregistrer</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+<script src="js/compiled/all.js"></script>
+
+
+</html>
