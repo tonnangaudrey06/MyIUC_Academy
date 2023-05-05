@@ -9,7 +9,7 @@ class Database
     {
         $this->db = null;
         try {
-            $this->db = new PDO("mysql:host=localhost;dbname=tournoi_iuc", "root", "");
+            $this->db = new PDO("mysql:host=localhost;dbname= myiuc_academy ", "root", "");
         } catch (Exception $e) {
             echo "Database could not be connected: " . $e->getMessage();
         }
