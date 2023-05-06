@@ -2,6 +2,7 @@
 <?php
 session_start();
 ?>
+
 <head>
     <meta charset="utf-8">
     <title> ProTournoi - Messagerie
@@ -69,21 +70,21 @@ session_start();
                                 <div class="tab-pane active" id="fos_user_profile_edit">
                                     <form action="./api/edituser.php" enctype="multipart/form-data" method="POST" class="form-horizontal form-bordered fos_user_profile_edit edit_profile_form" form_name="fos_user_profile_edit">
                                         <fieldset>
-                                        <?php 
-                                        include_once './api/database.php';
-                                        $database = new Database();
-                                        $db = $database->getConnection();
-                                        $qu = 'SELECT * from utilisateur where id_utilisateur ='.$_SESSION["userId"];
-                                        $rec = $db->query($qu)->fetchAll(PDO::FETCH_OBJ);
-                                        echo('
+                                            <?php
+                                            include_once './api/database.php';
+                                            $database = new Database();
+                                            $db = $database->getConnection();
+                                            $qu = 'SELECT * from utilisateur where id_utilisateur =' . $_SESSION["userId"];
+                                            $rec = $db->query($qu)->fetchAll(PDO::FETCH_OBJ);
+                                            echo ('
                                             <div class="form-group "><label class="col-md-4 control-label required" for="fos_user_profile_form_email">Adresse e-mail *</label>
-                                                <div class="col-md-8"><input type="email" id="fos_user_profile_form_email" name="email" class="form-control" value="'.$rec[0]->email.'" readonly></div>
+                                                <div class="col-md-8"><input type="email" id="fos_user_profile_form_email" name="email" class="form-control" value="' . $rec[0]->email . '" readonly></div>
                                             </div>
                                             <div class="form-group "><label class="col-md-4 control-label required" for="fos_user_profile_form_firstName">Prénom *</label>
-                                                <div class="col-md-8"><input type="text" id="fos_user_profile_form_firstName" name="prenom" required="required" maxlength="255" class="form-control" value="'.$rec[0]->prenom.'"></div>
+                                                <div class="col-md-8"><input type="text" id="fos_user_profile_form_firstName" name="prenom" required="required" maxlength="255" class="form-control" value="' . $rec[0]->prenom . '"></div>
                                             </div>
                                             <div class="form-group "><label class="col-md-4 control-label required" for="fos_user_profile_form_lastName">Nom *</label>
-                                                <div class="col-md-8"><input type="text" id="fos_user_profile_form_lastName" name="nom" required="required" maxlength="255" class="form-control" value="'.$rec[0]->nom.'"></div>
+                                                <div class="col-md-8"><input type="text" id="fos_user_profile_form_lastName" name="nom" required="required" maxlength="255" class="form-control" value="' . $rec[0]->nom . '"></div>
                                             </div>
                                             <div class="form-group "><label class="col-md-4 control-label" for="fos_user_profile_form_gender">Genre</label>
                                                 <div class="col-md-8"><select id="fos_user_profile_form_gender" name="sexe" class="form-control">
@@ -92,12 +93,12 @@ session_start();
                                                     </select></div>
                                             </div>
                                             <div class="form-group "><label class="col-md-4 control-label required" for="fos_user_profile_form_address">Adresse *</label>
-                                                <div class="col-md-8"><input type="text" id="fos_user_profile_form_address" name="address" required="required" maxlength="255" class="form-control" value="'.$rec[0]->address.'"></div>
+                                                <div class="col-md-8"><input type="text" id="fos_user_profile_form_address" name="address" required="required" maxlength="255" class="form-control" value="' . $rec[0]->address . '"></div>
                                             </div>
-                                            <input type="hidden" id="fos_user_profile_form__token" name="id" class="form-control" value="'.$rec[0]->id_utilisateur.'">
+                                            <input type="hidden" id="fos_user_profile_form__token" name="id" class="form-control" value="' . $rec[0]->id_utilisateur . '">
                                         </fieldset>
                                         ');
-                                        echo('
+                                            echo ('
                                         <div class="form-group form-actions">
                                             <div class="col-xs-12 text-right">
                                                 <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Fermer</button>
@@ -105,7 +106,7 @@ session_start();
                                             </div>
                                         </div>
                                         ');
-                                        ?>
+                                            ?>
                                     </form>
                                 </div>
                                 <div class="tab-pane" id="fos_user_change_password">

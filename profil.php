@@ -120,7 +120,7 @@
                                 <li class="divider"></li>
                                 <li class="divider"></li>
                                 <li>
-                                    <a href="./logout"><i class="fa fa-sign-out fa-fw pull-right"></i>
+                                    <a href="./login"><i class="fa fa-sign-out fa-fw pull-right"></i>
                                         Déconnexion
                                     </a>
                                 </li>
@@ -157,6 +157,13 @@
             var editProfilePath = './editprofile.php';
             $.get(editProfilePath, function(data) {
                 $("#edit-profile-container").html(data);
+                $('#equipecreer').modal('show');
+            });
+        });
+        $('#newteam').click(function() {
+            var editProfilePath = './equipe.html';
+            $.get(editProfilePath, function(data) {
+                $("#block push-bit").html(data);
                 $('#modal-user-settings').modal('show');
                 $('[data-toggle="tabs"] a, .enable-tabs a').click(function(e) {
                     e.preventDefault();
